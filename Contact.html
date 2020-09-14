@@ -1,15 +1,84 @@
-<form>
-    <div class="form-group">
-      <label for="exampleFormControlInput1">Email address</label>
-      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-    </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap 4 Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container my-5">
+
+        <style>
+        .border-top {
+          border-top: 5px solid #33b5e5 !important;
+          border-top-left-radius: .25rem!important;
+            border-top-right-radius: .25rem!important;
+        }
+      </style>
     
-    <div class="form-group">
-      <label for="exampleFormControlTextarea1">Name</label>
-      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      <!--Section: Content-->
+      <section class="text-center dark-grey-text mb-5">
+    
+        <div class="card">
+          <div class="card-body rounded-top border-top p-5">
+            
+            <!-- Section heading -->
+            <h3 class="font-weight-bold my-4">Contact Me</h3>
+            <!-- Section description -->
+            <p class="font-weight-light mx-auto mb-4 pb-2">Looking to Connect?<br> </p>
+    
+            <form class="mb-4 mx-md-5" action="">
+    
+              <div class="row">
+                <div class="col-md-6 mb-4">
+    
+                  <!-- Name -->
+                  <input type="text" id="name" class="form-control" placeholder="Name">
+    
+                </div>
+                <div class="col-md-6 mb-4">
+    
+                  <!-- Email -->
+                  <input type="email" id="email" class="form-control" placeholder="Email">
+    
+                </div>
+              </div>
+    
+              <div class="row">
+                <div class="col-md-12 mb-4">
+    
+                  <!-- Subject -->
+                  <input type="text" id="subject" class="form-control" placeholder="Subject">
+    
+                </div>
+              </div>
+    
+              <div class="row">
+                <div class="col-md-12">
+    
+                  <div class="form-group mb-4">
+                    <textarea class="form-control rounded" id="message" rows="3" placeholder="How can we help?"></textarea>
+                  </div>
+    
+                  <div class="text-center">
+                    <button type="submit" class="btn btn-info btn-md">Submit</button>
+                  </div>
+    
+                </div>
+              </div>
+    
+            </form>
+            
+          </div>
+        </div>
+    
+      </section>
+      <!--Section: Content-->
+    
     </div>
-    <div class="form-group">
-        <label for="exampleFormControlTextarea1">Phone Number</label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-      </div>
-  </form>
+</body>
+</html>
